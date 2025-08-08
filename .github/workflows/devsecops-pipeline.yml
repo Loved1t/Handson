@@ -30,13 +30,13 @@ jobs:
       # 3️⃣ Install dependencies (optional, for testing before Docker build)
       - name: Install dependencies
         run: npm install
-        working-directory: frontend
+        working-directory: app
 
         
 
       # 4️⃣ Build Docker image
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/senior:latest frontend
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/senior:latest app
 
 
       # 5️⃣ Install Trivy

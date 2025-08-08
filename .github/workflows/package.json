@@ -1,0 +1,14 @@
+{
+  "name": "vuln-demo",
+  "version": "1.0.0",
+  "description": "Beginner DevSecOps vulnerable app for pipeline practice",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "4.17.1", 
+    "lodash": "4.17.4",     
+    "axios": "0.21.1"       
+  }
+}

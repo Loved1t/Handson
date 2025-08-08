@@ -21,9 +21,15 @@ jobs:
         with:
           node-version: 18
 
+      - name: Debug Node and npm versions
+        run: |
+              node -v
+              npm -v
+              cat package.json
+
       # 3️⃣ Install dependencies (optional, for testing before Docker build)
       - name: Install dependencies
-        run: npm install
+        run: npm install --verbose
 
       # 4️⃣ Build Docker image
       - name: Build Docker image
